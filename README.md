@@ -7,7 +7,7 @@
 
 ## Примеры из доклада:
 - [Тот самый cms-bundle](https://github.com/skyeng/marketing-cms-bundle)
-- [Пример конфига из проекта, который использует этот бандл](https://github.com/alex-volodin/phprussia/-/blob/master/example)
+- [Пример конфига из проекта, который использует этот бандл](https://github.com/alex-volodin/phprussia/-/blob/main/example)
 
 ## Вопросы, которые можно по-изучать подробнее
 - [Как настроить Rector в Symfony проекте](https://github.com/rectorphp/rector-symfony)
