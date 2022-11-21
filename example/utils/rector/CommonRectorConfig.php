@@ -4,8 +4,14 @@ declare(strict_types=1);
 
 namespace App\Utils\Rector;
 
+use Rector\CodingStyle\Rector\Catch_\CatchExceptionNameMatchingTypeRector;
+use Rector\CodingStyle\Rector\ClassConst\VarConstantCommentRector;
+use Rector\CodingStyle\Rector\ClassMethod\UnSpreadOperatorRector;
+use Rector\CodingStyle\Rector\Property\InlineSimplePropertyAnnotationRector;
+use Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector;
 use Rector\Config\RectorConfig;
 use Rector\Core\ValueObject\PhpVersion;
+use Rector\Privatization\Rector\Class_\FinalizeClassesWithoutChildrenRector;
 
 final class CommonRectorConfig
 {
@@ -21,6 +27,12 @@ final class CommonRectorConfig
             self::ROOT_DIR.'/**/_data/*',
             self::ROOT_DIR.'/**/_output/*',
             self::ROOT_DIR.'/**/_support/_generated/*',
+            CatchExceptionNameMatchingTypeRector::class,
+            InlineSimplePropertyAnnotationRector::class,
+            UnSpreadOperatorRector::class,
+            VarConstantCommentRector::class,
+            NewlineAfterStatementRector::class,
+            FinalizeClassesWithoutChildrenRector::class,
         ]);
 
         $rectorConfig->phpVersion(PhpVersion::PHP_81);
