@@ -1,0 +1,27 @@
+{
+    "name": "skyeng/example-project",
+    "description": "example from real project",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "rector/rector": "^0.13.7"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Utils\\Rector\\": "utils/rector"
+        }
+    },
+    "scripts": {
+        "post-package-update": [
+            "App\\Composer\\EventHandler::postPackageUpdate"
+        ]
+    },
+    "extra": {
+        "marketing-cms-bundle": {
+            "post-update-cmds": {
+                "rector": "vendor/bin/rector process --clear-cache --config=utils/rector/cms-bundle-rector.php"
+            }
+        }
+    }
+}
