@@ -15,7 +15,8 @@
     "scripts": {
         "post-package-update": [
             "App\\Composer\\EventHandler::postPackageUpdate"
-        ]
+        ],
+        "rector": "vendor/bin/rector process --clear-cache --config=utils/rector/rector.php"
     },
     "extra": {
         "marketing-cms-bundle": {
