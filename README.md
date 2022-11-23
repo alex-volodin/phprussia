@@ -5,6 +5,7 @@
 - [Блог Rector](https://getrector.org/blog)
 - [Блог Tomáš Votruba](https://tomasvotruba.com/blog/)
 - [Книга «Rector - The Power of Automated Refactoring»](https://leanpub.com/rector-the-power-of-automated-refactoring)
+- [Ссылка на доклад](https://disk.yandex.ru/i/qQZe5sq-j-Fxdg)
 
 ## Примеры из доклада:
 - [Тот самый cms-bundle](https://github.com/skyeng/marketing-cms-bundle)
