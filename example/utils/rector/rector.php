@@ -23,12 +23,10 @@ return static function (RectorConfig $rectorConfig): void {
         SetList::CODING_STYLE,
         SetList::CODE_QUALITY,
         SetList::TYPE_DECLARATION,
-        SetList::TYPE_DECLARATION_STRICT,
         SetList::DEAD_CODE,
         SetList::PRIVATIZATION,
 
         SymfonySetList::SYMFONY_CODE_QUALITY,
-        SymfonySetList::SYMFONY_STRICT,
         SymfonySetList::SYMFONY_CONSTRUCTOR_INJECTION,
         SymfonySetList::ANNOTATIONS_TO_ATTRIBUTES,
 
